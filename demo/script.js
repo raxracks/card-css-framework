@@ -2,7 +2,7 @@ if(!window.matchMedia("only screen and (max-width: 760px)").matches) {
   document.location.href = "/widescreen.html";
 }
 
-window.addEventListener("load", e => {
+window.addEventListener("card-loaded", () => {
   let test_switch = document.getElementById("test-switch");
   
   test_switch.addEventListener("change", () => {
