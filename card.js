@@ -1,4 +1,4 @@
-window.addEventListener("load", e => {
+window.addEventListener("load", () => {
   let labelled_switches = document.getElementsByClassName("labelled-switch");
   
   for(let i = 0; i < labelled_switches.length; i++) {
@@ -34,4 +34,6 @@ window.addEventListener("load", e => {
     el.appendChild(input);
     el.appendChild(span);
   };
+  
+  window.dispatchEvent(new Event('card-loaded'));
 });
